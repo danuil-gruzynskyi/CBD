@@ -1,0 +1,51 @@
+@mixin adaptiv-fonts( $pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(
+      #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+    );
+  }
+
+@mixin title {
+    font-family: 'Oswald-Regular';
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+@mixin title-Bl {
+  font-family: 'Oswald-Regular';
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@mixin title-light {
+  font-family: 'Oswald-Light';
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+}
+
+@mixin text {
+  font-family: 'Oswald-Light';
+  color: #6e774a;
+  letter-spacing: 0.28em;
+}
+
+@mixin btn {
+  width: 100px;
+  height: 30px;
+  background-color: rgba(122, 122, 218, 0.5);
+  color: rgb(255, 255, 255);
+}
+
+@mixin form-prop{
+  padding: 5px;
+  background-color:  #999898;
+  outline: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.2em;
+}
+

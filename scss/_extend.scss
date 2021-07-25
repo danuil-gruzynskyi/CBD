@@ -1,0 +1,27 @@
+%fl-Sp-Be {
+    display: flex;
+    justify-content: space-between;
+}
+
+%fl-Sp-Ar {
+    display: flex;
+    justify-content: space-around;
+}
+
+%fl-Col-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+%fl-Col-start {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+%fl-Col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
